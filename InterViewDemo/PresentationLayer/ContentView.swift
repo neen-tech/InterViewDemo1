@@ -24,6 +24,13 @@ struct ContentView: View {
                 }
                 else {
                     List(viewModelUserList.users) { user in
+                        NavigationLink(user.name, value: user)
+                        
+//                        NavigationLink(value: user) {
+//                            CellView(user: user)
+//                        }
+                    }
+                    .navigationDestination(for: User.self) { user in
                         CellView(user: user)
                     }
                 }
@@ -46,7 +53,8 @@ struct CellView: View {
             Text(user.email)
         }
         .font(.system(size: 20,weight: .medium))
-        .foregroundStyle(Color.secondary)
+        .foregroundStyle(Color.blue)
+        .multilineTextAlignment(.leading)
     }
 }
 

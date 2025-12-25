@@ -1,13 +1,11 @@
 import Foundation
 
-struct User: Identifiable, Codable, Equatable {
-    var id: String
-    var name: String
-    var email: String
-    
-    init(id: String, name: String, email: String) {
-        self.id = id
-        self.name = name
-        self.email = email
-    }
+struct User: Codable,
+                  Identifiable,
+                  Equatable,Hashable {
+    let id : Int
+    let name : String
+    let email : String
+    let username : String
 }
+

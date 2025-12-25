@@ -18,64 +18,6 @@
             endingLineNumber = "22"
             landmarkName = "loadUsers()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "591DF6B5-ECC9-49EA-A1D2-E6BD02FA2589 - 54aa62100ced6772"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for InterViewDemo.UserListViewModel.loadUsers() async -&gt; ()"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/PresentationLayer/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-               <Location
-                  uuid = "591DF6B5-ECC9-49EA-A1D2-E6BD02FA2589 - 54097cb99c0e6a41"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for InterViewDemo.UserListViewModel.loadUsers() async -&gt; ()"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/PresentationLayer/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-               <Location
-                  uuid = "591DF6B5-ECC9-49EA-A1D2-E6BD02FA2589 - 618457cb3371a170"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for InterViewDemo.UserListViewModel.loadUsers() async -&gt; ()"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/PresentationLayer/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-               <Location
-                  uuid = "591DF6B5-ECC9-49EA-A1D2-E6BD02FA2589 - 7b6f222fa8ca4e71"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for InterViewDemo.UserListViewModel.loadUsers() async -&gt; ()"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/PresentationLayer/UserListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -88,40 +30,10 @@
             filePath = "InterViewDemo/PresentationLayer/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "521EDDA8-7091-449E-A3A2-41337488FA5C - 22debcd4065b4d9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in InterViewDemo.ContentView.body.getter : some"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/PresentationLayer/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35">
-               </Location>
-               <Location
-                  uuid = "521EDDA8-7091-449E-A3A2-41337488FA5C - e538e745af31def0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in InterViewDemo.ContentView.body.getter : some"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/PresentationLayer/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,138 +50,36 @@
             endingLineNumber = "10"
             landmarkName = "execute()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "21FD5032-963B-49CF-B2AB-52FC0FAA6F27 - ff72a4a16c5c9228"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for InterViewDemo.FetchUserUseCase.execute() async throws -&gt; Swift.Array&lt;InterViewDemo.User&gt;"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/DomainLayer/FetchUserUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10">
-               </Location>
-               <Location
-                  uuid = "21FD5032-963B-49CF-B2AB-52FC0FAA6F27 - 5da43a038fd19409"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for InterViewDemo.FetchUserUseCase.execute() async throws -&gt; Swift.Array&lt;InterViewDemo.User&gt;"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/DomainLayer/FetchUserUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10">
-               </Location>
-               <Location
-                  uuid = "21FD5032-963B-49CF-B2AB-52FC0FAA6F27 - 8fc4af6819af0a24"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for InterViewDemo.FetchUserUseCase.execute() async throws -&gt; Swift.Array&lt;InterViewDemo.User&gt;"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/DomainLayer/FetchUserUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10">
-               </Location>
-               <Location
-                  uuid = "21FD5032-963B-49CF-B2AB-52FC0FAA6F27 - 660db34b7fc84e22"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for InterViewDemo.FetchUserUseCase.execute() async throws -&gt; Swift.Array&lt;InterViewDemo.User&gt;"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/DomainLayer/FetchUserUseCase.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0D18837C-C237-4693-AC3D-5CDB299AC496"
+            uuid = "48709B35-6C0E-4D74-AAC6-210BE3B89739"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InterViewDemo/DataLayer/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "fetchData(endpoint:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0D18837C-C237-4693-AC3D-5CDB299AC496 - 1c466c9fbf59d282"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for InterViewDemo.NetworkService.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endpoint: Swift.String) async throws -&gt; &#x3c4;_0_0"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/DataLayer/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16">
-               </Location>
-               <Location
-                  uuid = "0D18837C-C237-4693-AC3D-5CDB299AC496 - d8ce438fb9c9703d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for InterViewDemo.NetworkService.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endpoint: Swift.String) async throws -&gt; &#x3c4;_0_0"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/DataLayer/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16">
-               </Location>
-               <Location
-                  uuid = "0D18837C-C237-4693-AC3D-5CDB299AC496 - a4ad10e98ca40684"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for InterViewDemo.NetworkService.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endpoint: Swift.String) async throws -&gt; &#x3c4;_0_0"
-                  moduleName = "InterViewDemo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nitintandon/Desktop/InterViewDemo/InterViewDemo/DataLayer/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3C06F952-F5FA-4B92-9300-EC7FBA261FB3"
+            uuid = "7C1856BE-B7C9-4606-8B3C-C63BA509894B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InterViewDemo/DataLayer/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "fetchData(endpoint:)"
             landmarkType = "7">
          </BreakpointContent>

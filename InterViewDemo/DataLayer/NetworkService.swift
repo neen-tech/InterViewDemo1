@@ -20,8 +20,8 @@ class NetworkService: NetworkServiceProtocol {
         guard (200...299).contains(httpResponse.statusCode) else { throw ApiError.serverError(httpResponse.statusCode) }
         
         do {
-            let decoder = try JSONDecoder().decode(T.self, from: data)
-            return decoder
+            let decorder = try JSONDecoder().decode(T.self, from: data)
+            return decorder
         } catch {
             throw ApiError.decodeError
         }

@@ -19,7 +19,7 @@ final class UserListViewModel: UserListViewModelProtocol {
         isLoading = true
         errorMassage = nil
         do {
-            self.users = try await self.fetchUserRepostiory.execute()
+            users = try await self.fetchUserRepostiory.execute()
         } catch {
             errorMassage = "Unable to load Users"
         }
