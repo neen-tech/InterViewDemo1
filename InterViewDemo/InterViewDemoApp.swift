@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct InterViewDemoApp: App {
+    let appDependency = AppDependency()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModelUserList: appDependency.makeVM())
         }
     }
 }
