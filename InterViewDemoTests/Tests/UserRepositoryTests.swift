@@ -31,7 +31,6 @@ class UserRepositoryTests: XCTestCase {
     
     func test_if_user_is_not_fetched_successfully() async throws {
         mockNetworkService.shouldFailure = true
-        
         do {
             _ = try await sut.fetchUsers()
             XCTFail("Service calling issue going on")
@@ -39,5 +38,6 @@ class UserRepositoryTests: XCTestCase {
             XCTAssertEqual(error, ApiError.serverError(500))
         }
     }
+    
     
 }
