@@ -32,4 +32,12 @@ class UserListViewModelTest: XCTestCase {
         XCTAssertNil(sut.errorMassage)
         
     }
+    
+    func testLoadUsers_WhenFails_SetsErrorMessage() async {
+            mockFetchUserUseCase.shouldThoughError = true
+            await sut.loadUsers()
+            XCTAssertTrue(sut.users.isEmpty)
+            XCTAssertFalse(sut.isLoading)
+            XCTAssertNotNil(sut.errorMassage)
+        }
 }
