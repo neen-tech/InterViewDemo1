@@ -4,15 +4,15 @@ class AppDependency {
     
     let networkService: NetworkServiceProtocol
     let userRepositroy: UserRepositoryProtocol
-    let fecthUserUseCase: FetchUserUseCaseProtocol
+    let fetchUserUseCase: FetchUserUseCaseProtocol
     
-    init(networkService: NetworkServiceProtocol? = nil, userRepositroy: UserRepositoryProtocol? = nil, fecthUserUseCase: FetchUserUseCaseProtocol? = nil) {
-        self.networkService = networkService ?? NetworkService()
-        self.userRepositroy = UserRepository(networkService: self.networkService)
-        self.fecthUserUseCase = FetchUserUseCase(userRepository: self.userRepositroy)
+    init(networkService: NetworkServiceProtocol, userRepositroy: UserRepositoryProtocol, fecthUserUseCase: FetchUserUseCaseProtocol) {
+        self.networkService = networkService
+        self.userRepositroy = userRepositroy
+        self.fetchUserUseCase = fecthUserUseCase
     }
     
     func makeVM() -> UserListViewModel {
-        return UserListViewModel(fetchUserRepostiory: self.fecthUserUseCase)
+        return UserListViewModel(fetchUserRepostiory: self.fetchUserUseCase)
     }
 }

@@ -24,7 +24,7 @@ class UserRepositoryTests: XCTestCase {
    
     func test_if_user_is_fetched_successfully() async throws {
         mockNetworkService.shouldFailure = false
-        let users = try await sut.fetchUsers()
+        let users:[User] = try await sut.fetchUsers()
         XCTAssertEqual(users.count, 2)
         XCTAssertEqual(users.first?.name, "Leanne Graham")
     }

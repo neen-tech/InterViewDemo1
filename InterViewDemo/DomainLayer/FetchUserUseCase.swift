@@ -1,7 +1,7 @@
 import Foundation
 
 class FetchUserUseCase: FetchUserUseCaseProtocol {
-    let userRepository: UserRepositoryProtocol
+   private let userRepository: UserRepositoryProtocol
     init(userRepository: UserRepositoryProtocol) {
         self.userRepository = userRepository
     }

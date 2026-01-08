@@ -3,12 +3,12 @@ import Foundation
 @testable import InterViewDemo
 
 class MockFetchUserUseCase: FetchUserUseCaseProtocol {
-    var shouldThoughError: Bool = false
+    var shouldThrowError: Bool = false
     var usersToReturn: [User] = []
     
     @MainActor
     func execute() async throws -> [User] {
-        if shouldThoughError {
+        if shouldThrowError {
            throw ApiError.serverError(500)
         }
         return usersToReturn

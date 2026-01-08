@@ -7,3 +7,5 @@ enum ApiError: Error, Equatable {
     case serverError(Int)
     case networkError(String)
 }
+
+

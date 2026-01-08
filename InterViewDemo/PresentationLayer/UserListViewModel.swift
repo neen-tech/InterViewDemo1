@@ -3,26 +3,22 @@ import SwiftUI
 
 @Observable @MainActor
 final class UserListViewModel: UserListViewModelProtocol {
-    
-    
-    var users:[User] = []
-    var isLoading: Bool = false
-    var errorMassage: String? = nil
-    
-    let fetchUserRepostiory: FetchUserUseCaseProtocol
-    
+        
+    private(set) var users: [User] = []
+    private(set) var loadingState: LoadingState = .idle
+    private let fetchUserRepostiory: FetchUserUseCaseProtocol
     init(fetchUserRepostiory: FetchUserUseCaseProtocol) {
         self.fetchUserRepostiory = fetchUserRepostiory
     }
     
     func loadUsers() async {
-        isLoading = true
-        errorMassage = nil
+        loadingState = .loading
         do {
             users = try await self.fetchUserRepostiory.execute()
+            loadingState = .loaded(users)
         } catch {
-            errorMassage = "Unable to load Users"
+            loadingState = .error("Unable to Load from the server please try later")
         }
-        isLoading = false
     }
 }
+

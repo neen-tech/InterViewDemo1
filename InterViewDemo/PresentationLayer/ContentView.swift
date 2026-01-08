@@ -9,37 +9,56 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var viewModelUserList: UserListViewModel
+    @State private var viewModelUserList: UserListViewModel
+    
+    init(viewModelUserList: UserListViewModel) {
+        self.viewModelUserList = viewModelUserList
+    }
     
     var body: some View {
         NavigationStack {
-            VStack {
-                if viewModelUserList.isLoading {
-                    ProgressView("Loading...")
-                } else if viewModelUserList.errorMassage != nil {
-                    VStack{
-                        Text("Error")
-                        Text(viewModelUserList.errorMassage ?? "Error" )
-                    }
-                }
-                else {
-                    List(viewModelUserList.users) { user in
-                        NavigationLink(user.name, value: user)
-                        
-//                        NavigationLink(value: user) {
-//                            CellView(user: user)
-//                        }
-                    }
-                    .navigationDestination(for: User.self) { user in
-                        CellView(user: user)
+            ZStack {
+                Color.white.ignoresSafeArea()
+                VStack {
+                    switch viewModelUserList.loadingState {
+                    case .idle:
+                        Text("We are featching List")
+                    case .loading:
+                        ProgressView("Loading...")
+                    case .loaded(let users):
+                        VStack {
+                            List(users) { user in
+                                NavigationLink(value: user) {
+                                    HStack {
+                                        Text("\(user.id)")
+                                            .multilineTextAlignment(.leading)
+                                            .foregroundStyle(Color.gray)
+                                            .font(.system(.largeTitle))
+                                        VStack(alignment: .leading){
+                                            Text(user.name)
+                                            Text(user.email)
+                                        }
+                                        .font(.system(size: 24))
+                                    }
+                                }
+                            }
+                        }
+                    case.error(let errorMessage):
+                        VStack {
+                            Text("Error")
+                            Text(errorMessage)
+                        }
+                        .foregroundStyle(.red)
                     }
                 }
             }
-            .padding()
+            .navigationTitle("Demo Users")
+            .navigationDestination(for: User.self) { user in
+                CellView(user: user)
+            }
         }
-        .navigationTitle("Demo Users")
         .task {
-           await self.viewModelUserList.loadUsers()
+            await self.viewModelUserList.loadUsers()
         }
     }
 }
@@ -48,12 +67,15 @@ struct ContentView: View {
 struct CellView: View {
     var user: User
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 8){
+            Text("\(user.id)")
             Text(user.name)
             Text(user.email)
+            Text(user.username)
+            Spacer()
         }
         .font(.system(size: 20,weight: .medium))
-        .foregroundStyle(Color.blue)
+        .foregroundStyle(Color.gray)
         .multilineTextAlignment(.leading)
     }
 }
